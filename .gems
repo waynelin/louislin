@@ -1,2 +1,3 @@
+rails -v 2.3.5
 haml
 chriseppstein-compass --source http://gems.github.com
