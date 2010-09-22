@@ -1,5 +1,4 @@
 rails -v 2.3.5
 sinatra
 haml
-gem "compass", ">= 0.10.4"
 chriseppstein-compass --source http://gems.github.com
