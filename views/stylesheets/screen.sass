@@ -1,4 +1,64 @@
 @import base.sass
 
+//Blueprint mixins
++blueprint-typography
++blueprint-utilities
++blueprint-grid
+//+blueprint-debug("/images/grid.png")
++blueprint-interaction
++blueprint-form
+
+/*Loading Screen*/    
+.loading-title
+  :color #666666
+
+.load-img
+  :border none
+
+/*Site*/
 body
-  :background red
+  :background #000
+  
+#menu
+  :float right
+
+#site
+  :display block
+  :overflow hidden
+  :position relative
+  h1
+    :color #666
+    :float left
+    :top 100px
+    :left -120px
+    :position relative
+    
+#polaroid
+  :padding 250px
+  :background-image url(../images/polaroid.png)
+  :background-repeat no-repeat
+  :position absolute
+  :top 260px
+  :left 10px
+
+#container
+  :width 10000px
+  :height 800px
+  :position relative
+  :overflow hidden
+  
+/*Film Strips*/
+.filmstrip
+  :height 800px
+  :float left
+  :position relative
+
+.filmstrip-beg 
+  :width 1500px
+  :background-image url(../images/filmstrip-beg.png)
+  :background-repeat no-repeat
+
+.filmstrip-01
+  :width 1000px
+  :background-image url(../images/filmstrip-01.png)
+  :background-repeat no-repeat

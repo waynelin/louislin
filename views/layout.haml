@@ -1,8 +1,28 @@
 !!! Strict
 %html
   %head
-    %title nom nom nom
-    %link(rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen")
+    %title A picture speaks a thousand words.
+    
+    / Metatags 
+    %meta(name="author" content="waynelin.com")
+    %meta(name="robots" content="index, follow")
+    %meta(http-eqiv="Content-Type" content="text/html; charset=UTF-8")
+    %meta(name="keywords" content="photography, louis, lin, louis lin, wayne, wayne lin")
+    %meta(name="description" content="A picture speaks a thousand words.")
+    
+    / Stylesheets
+    %link(rel="stylesheet" href="/stylesheets/screen.css" type="text/css" media="screen, projection")
+    /[if IE]
+    
+    
+    /Javascripts
+    %script{:type => "text/javascript",
+            :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" }
+    
+    :javascript 
+      $(document).ready(function(){
+        //alert("Hello World, Javascript now functional!!")
+      });
+    
   %body
-    #main
-      =yield
+    =yield
