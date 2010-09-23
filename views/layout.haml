@@ -1,7 +1,7 @@
 !!! Strict
 %html
   %head
-    %title A picture speaks a thousand words.
+    %title A 50th birthday gift from a son to a father.
     
     / Metatags 
     %meta(name="author" content="waynelin.com")
@@ -18,9 +18,26 @@
     /Javascripts
     %script{:type => "text/javascript",
             :src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" }
+    %script{:type => "text/javascript",
+            :src => "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js" }                       
+    %script{:type => "text/javascript",
+            :src => "scripts/jquery.metadata.min.js"}
+    %script{:type => "text/javascript",
+            :src => "scripts/jquery.swapimage.min.js"}
+    %script{:type => "text/javascript",
+            :src => "scripts/jquery.collapser.js"}
     
     :javascript 
       $(document).ready(function(){
+        $.swapImage(".swapImage");
+        $('.card').collapser({
+        	target: 'siblings',
+        	effect: 'slide',
+        	expandHtml: 'Click Me',
+        	collapseHtml: 'Hide Card',
+        	expandClass: 'expArrow',
+        	collapseClass: 'collArrow'
+        });
         //alert("Hello World, Javascript now functional!!")
       });
     
